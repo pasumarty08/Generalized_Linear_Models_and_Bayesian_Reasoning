@@ -1,0 +1,5 @@
+In this project, I worked on predicting the price variations of bitcoin, a virtual cryptographic currency. These predictions could be used as the foundation of a bitcoin trading strategy. To make these predictions, I have familiarized myself with machine learning techniques, Bayesian Regression, and implemented these techniques in Python.
+
+To make the data to have evenly space records, I have taken all the records within a 20 second window and replaced it by a single record as the average of all the transaction prices in that window. Not every 20 second window had a record; therefore those missing entries were filled using the prices of the previous 20 observations and assuming a Gaussian distribution. The raw data that has been cleaned is given in the file dataset.csv.
+
+Implemented the Bayesian Regression model to predict the future price variation of bitcoin as described in the reference paper: Bayesian regression and Bitcoin by Devavrat Shah and Kang Zhang (https://arxiv.org/pdf/1410.1231.pdf)
